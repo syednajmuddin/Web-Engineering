@@ -1,195 +1,198 @@
-# 🛠️ Instructor’s Note on AI & Ethics
+ # 🛠️ Instructor’s Note on AI & Ethics
 > **Declaration:** Portions of this material were generated with the assistance of AI (ChatGPT, OpenAI) and curated by the instructor.  
 > Students are advised to consult standard references to validate and deepen their understanding.
 
 ---
 
-# Lecture 3: Introduction to HTML & Page Structure
+# Web Engineering – Lecture 1
+## Introduction to Web Engineering
 
 ---
 
-## Recap of Previous Lecture
+## 🎯 Learning Objectives
 
-- Difference between Internet (infrastructure) and Web (service on top of it)
-- Basic client–server model (Client → Request → Server → Response)
-- Difference between static and dynamic content
-- Real-world analogy (e.g., ready-made vs custom-made service)
-- Role of web browsers and web servers
+By the end of this lecture, students will be able to:
 
----
-
-## 1. Basic HTML Document Structure
-
-Every webpage follows a standard structure:
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First Page</title>
-</head>
-<body>
-    <h1>Welcome</h1>
-    <p>This is my webpage.</p>
-</body>
-</html>
-```
-
-### Explanation:
-
-* `<!DOCTYPE html>` → Defines HTML5 document
-* `<html>` → Root element
-* `<head>` → Metadata (title, meta info)
-* `<body>` → Visible content
+- Understand what **Web Engineering** is
+- Differentiate between **Web Development** and **Web Engineering**
+- Recognize the **unique characteristics of web applications**
+- Appreciate the **need for engineering discipline in web systems**
 
 ---
 
-## 2. Basic Content Tags
+## 🌐 What is Web Engineering?
 
-Common tags used inside `<body>`:
+**Web Engineering** is the application of systematic, disciplined, and measurable approaches to the development, operation, and maintenance of web-based applications.
 
-```html
-<h1>Main Heading</h1>
-<p>This is a paragraph.</p>
-```
+👉 In simple terms:
+> It is **software engineering applied to the web**
 
 ---
 
-## 3. How Do We Organize a Webpage?
+## 💻 Web Development vs Web Engineering
 
-Now consider a real website:
+| Web Development | Web Engineering |
+|----------------|----------------|
+| Focus on coding | Focus on system design |
+| Tools & technologies | Architecture & principles |
+| Builds websites | Builds scalable systems |
+| Syntax-oriented | Concept-oriented |
 
-* Where does the header go?
-* Where is navigation placed?
-* How do we separate content and footer?
-
-A simple (but not ideal) approach is:
-
-```html
-<div class="header">Header</div>
-<div class="nav">Navigation</div>
-<div class="content">Content</div>
-<div class="footer">Footer</div>
-```
-
-### Problem:
-
-* Everything is just a `<div>`
-* No meaning (semantics)
-* Harder to understand and maintain
+👉 Example:
+- Web Development → Creating a login page
+- Web Engineering → Designing a **secure authentication system**
 
 ---
 
-## 4. Semantic HTML (Recommended Approach)
+## 🔍 Why Do We Need Web Engineering?
 
-Semantic tags describe the *meaning* of content.
+Web applications are:
 
-```html
-<header>Header</header>
-<nav>Navigation</nav>
-<main>
-    <section>Content</section>
-</main>
-<footer>Footer</footer>
-```
+- 🌍 **Globally accessible**
+- 👥 **Used by thousands/millions simultaneously**
+- 🔄 **Continuously evolving**
+- 🔐 **Security-sensitive**
 
-### Why use semantic tags?
-
-* Better readability for developers
-* Helps search engines (SEO)
-* Improves accessibility (screen readers)
+Without engineering principles, systems may:
+- Crash under load
+- Become insecure
+- Be difficult to maintain
 
 ---
 
-## 5. Complete Example Using Semantic Tags
+## 📊 Evolution of the Web
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Website</title>
-</head>
-<body>
+### 🕸️ Web 1.0 (Static Web)
+- Read-only content
+- Simple HTML pages
 
-  <header>
-    <h1>My Website</h1>
-  </header>
+### 🔄 Web 2.0 (Interactive Web)
+- User-generated content
+- Social media, dynamic apps
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-  </nav>
-
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>This is the main content.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026</p>
-  </footer>
-
-</body>
-</html>
-```
+### 🤖 Web 3.0 (Smart Web)
+- AI-driven systems
+- Semantic web, personalization
 
 ---
 
-## 6. Lists in HTML
+## ⚙️ Characteristics of Web Applications
 
-### Unordered List
+Web applications differ from traditional software:
 
-```html
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-</ul>
-```
+### 1. Distributed Nature
+- Runs across **client + server**
 
-### Ordered List
+### 2. Heterogeneity
+- Multiple devices, browsers, OS
 
-```html
-<ol>
-  <li>First</li>
-  <li>Second</li>
-</ol>
-```
+### 3. Network Dependency
+- Performance depends on internet conditions
 
----
+### 4. Stateless Communication
+- Each request is independent (HTTP)
 
-## 7. Links in HTML
-
-```html
-<a href="https://example.com">Visit Website</a>
-```
+### 5. Continuous Deployment
+- Frequent updates without user installation
 
 ---
 
-## 8. Images in HTML
+## ⚠️ Challenges in Web Development
 
-```html
-<img src="image.jpg" alt="Description" width="200">
-```
+- Cross-browser compatibility
+- Security vulnerabilities
+- Performance issues
+- Scalability
+- Rapid technology changes
 
----
-
-## 9. In-Class Activity
-
-Create a simple webpage that includes:
-
-* A header
-* Navigation links
-* A main section with heading and paragraph
-* A list
-* An image
-* A footer
+👉 These challenges require **engineering solutions**, not just coding.
 
 ---
 
-## 10. Summary
+## 🧠 Role of a Web Engineer
 
-* HTML provides structure to webpages
-* Semantic tags improve clarity and organization
-* Lists, links, and images enhance content
+A Web Engineer:
+
+- Designs system architecture
+- Ensures scalability & performance
+- Handles security concerns
+- Applies best practices & standards
+- Maintains and evolves applications
+
+---
+
+## 🔗 Course Learning Outcomes (CLOs)
+
+By the end of this course, you will be able to:
+
+1. Discuss how web standards impact development
+2. Describe constraints of the web platform
+3. Design and implement web applications
+4. Evaluate applications against standards
+
+---
+
+## 🆚 This Course vs Web Technologies
+
+| Web Technologies | Web Engineering |
+|------------------|----------------|
+| Learn HTML, CSS, JS | Learn how to design systems |
+| Build components | Analyze complete applications |
+| Focus on implementation | Focus on decisions & trade-offs |
+
+👉 This course answers:
+> “How do we build **robust and scalable web systems**?”
+
+---
+
+## 💡 Real-World Perspective
+
+Consider platforms like:
+- Facebook
+- Daraz
+- YouTube
+
+Questions a Web Engineer asks:
+- How do they handle millions of users?
+- How is data managed efficiently?
+- How is security ensured?
+
+---
+
+## 📝 In-Class Activity
+
+Discuss:
+
+> Why might a website that works perfectly for 100 users fail for 100,000 users?
+
+---
+
+## 📌 Summary
+
+- Web Engineering = **Engineering discipline for web systems**
+- Focus is on **design, scalability, and reliability**
+- Web apps are **complex, distributed, and dynamic**
+- Coding alone is **not sufficient**
+
+---
+
+## 📚 Suggested Reading
+
+- Pressman, *Web Engineering: A Practitioner’s Approach*
+- Rajiv Chopra, *Web Engineering*
+
+---
+
+## ❓ Quick Questions
+
+1. What is the difference between Web Development and Web Engineering?
+2. Why are web applications considered complex systems?
+3. What is meant by the stateless nature of HTTP?
+
+---
+
+## 🚀 Next Lecture
+
+**Web Standards and Their Impact on Development**
+
+---
